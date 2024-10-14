@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Girish Mondal Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+body{
+	overflow-x:hidden;
+}
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.full-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Girish Mondal</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+	          <li class="nav-item"><a href="#certificate-section" class="nav-link"><span>Certifications</span></a></li>
+			  <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+			  <li class="nav-item"><a href="#photography-section" class="nav-link"><span>Photography</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Girish Mondal</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Student  ',
+						'Developer  ',
+						'Tech Enthusiast   ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Driven by Ambition</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/girishhmo/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a> 
+							<a href="https://github.com/Girishiam" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Girish Mondal</span></p>
+										<p><span class="title-s">Role: </span> <span>Web Developer and ML Enthusiastic</span></p>
+										<p><span class="title-s">Experience: </span> <span>Started Coding from 2019</span></p>
+										<p><span class="title-s">Address: </span> <span>Khulna, Dhaka, Bangladesh</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Web Development</span> <span class="pull-right">75%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I’m a passionate web developer and machine learning enthusiast who graduated in 2023 with a degree in Computer Science and Engineering. My academic journey was marked by hands-on projects that allowed me to explore web technologies and dive deep into the world of artificial intelligence. I’ve worked on several web development and ML-based projects, honing my skills in building responsive, dynamic websites and leveraging data-driven models to solve real-world problems.
+
+									With a strong foundation in programming, problem-solving, and a desire to keep learning, I am excited about the future of technology. I aspire to further my knowledge by pursuing higher education abroad, where I can contribute to cutting-edge research and innovation.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Web Developments &amp; Machine Learning</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Tensor Flow, Scikit-Learn, Image Processing, Intelligent ChatBot, PyTorch, Problem Solving, Web Apllication &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Science</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Bengali</span></li>
+									<li class="d-flex"><span>WebDev Tools:</span> <span>Python, Django, Django Rest API, Postgresql &amp; Javascript</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>IELTS:</span> <span>Reading: 7.5, Listening: 7.5, Speaking: 6.5, &amp; Writing: 6.5</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Photography, Teaching</span></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Education</h1>
+            <h2 class="mb-4">Education</h2>
+			<div class="underline"></div>
+          </div>
+        </div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2018-2023</span>
+    					<h2>Bachelor of Science in CSE</h2>
+    					<span class="position">Bangabandhu Sheikh Mujibur Rahman Science and Technology University</span>
+    					<p class="mt-4">Grade: 3.15 out of 4.00</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2017</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Govt. Bangabandhu College, Gopalganj, Dhaka, Bangladesh</span>
+    					<p class="mt-4">Grade: 4.83 out of 5.00</p>
+    				</div>
+				</div>
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate ">
+    					<span class="date">2015</span>
+    					<h2> Secondary School </h2>
+    					<span class="position">Chardakatia Secondary School</span>
+    					<p class="mt-4">Grade: 4.89 out of 5.00</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<!--<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>-->
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="certificate-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Certifications</h1>
+            <h2 class="mb-4">Certifications</h2>
+            <p>Below are the certificates of my achievements on several fields.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.hackerrank.com/certificates/iframe/903d061d70a1" class="block-20 zoom-effect" style="background-image: url('images/se.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.hackerrank.com/certificates/iframe/903d061d70a1">Software Engineer Intern (HackerRank)</a></h3>
+                <p>I passed the HackerRank Software Engineer role Certification test.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.udemy.com/certificate/UC-0a867721-81ea-4594-88d2-0ef9ddc8b3cc/" class="block-20 zoom-effect" style="background-image: url('images/udemy_ecommerce.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.udemy.com/certificate/UC-0a867721-81ea-4594-88d2-0ef9ddc8b3cc/">Python Django eCommerce course completion (Udemy)</a></h3>
+                <p>I completed a 20.5 hours course on udemy learning and implementing python, django, rest-api, javascript. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://www.datacamp.com/statement-of-accomplishment/course/afc6d0f8d9e1ca7d31fd1ab289e3204ae95aa7fb" class="block-20 zoom-effect" style="background-image: url('images/Understanding_Machine_Learning.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.datacamp.com/statement-of-accomplishment/course/afc6d0f8d9e1ca7d31fd1ab289e3204ae95aa7fb">Understanding Machine Learning</a></h3>
+                <p>I completed this course on DataCamp in 2022. I learnt basics of Machine Learning and got this certification.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		
+
+	<div class="row d-flex">
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://www.life-global.org/certificate/92eedd76-a2c3-462c-8afd-64b2c70625b7" class="block-20 zoom-effect" style="background-image: url('images/effectiveL.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://www.life-global.org/certificate/92eedd76-a2c3-462c-8afd-64b2c70625b7">Effective Leadership (Hp Life)</a></h3>
+			  <p>I enrolled this course to know more about effective Leadership.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://www.mygreatlearning.com/certificate/XONGCJBZ" class="block-20 zoom-effect" style="background-image: url('images/daa_sacience_foundation.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://www.mygreatlearning.com/certificate/XONGCJBZ">Data Science Foundation (Great Learning)</a></h3>
+			  <p>I completed this course to build my basic foundation in Data Science.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/mobileApp.png');" onclick="openImage('images/mobileApp.png')">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="javascript:void(0)">Mobile App and Game Development</a></h3>
+			  <p>I completed this 200h of course in 2022. I learnt basics of mobile app development and its funtion.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row d-flex">
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/red.png');"onclick="openImage('images/red.png')">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="javascript:void(0)">Basic First Aid Training</a></h3>
+			  <p>I completed this training on 20th January, 2022 from Bangladesh Red Crescent Socienty Dhaka City Unit.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/photography.png');"onclick="openImage('images/photography.png')">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="javascript:void(0)">First in Mobile Photography</a></h3>
+			  <p>I became first in the Intra University Photography Competetion, BSMRSTU in Mobile Photography Category.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry">
+			<a href="https://www.hackerrank.com/certificates/7c7a12260c63" class="block-20 zoom-effect" style="background-image: url('images/rest.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://www.hackerrank.com/certificates/7c7a12260c63">Rest API Intermediate (HackerRank)</a></h3>
+			  <p>I passed the HackerRank Rest API (Intermediate) certification test.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row justify-content-center mt-5">
+		<div class="col-md-6 text-center ftco-animate">
+			<p><a href="https://www.linkedin.com/in/girishhmo/details/certifications/" class="btn btn-primary py-4 px-5">More on LinkedIn</a></p>
+		</div>
+	</div>
+    </section>
+
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Projects</h1>
+			  <h2 class="mb-4">Projects</h2>
+			  <p>Below are the sample Web Development, Machine Learning, & other Projects.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.academia.edu/123673909/Fish_classification_using_deep_learning_depending_on_shape_and_texture" class="block-20 zoom-effect" style="background-image: url('images/projects/udergrad.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.academia.edu/123673909/Fish_classification_using_deep_learning_depending_on_shape_and_texture">Undergrad Thesis: Fish classification using deep learning depending on shape and texture</a></h3>
+				  <p>Click on the picture to know more about the thesis on academia.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Girishiam/chatbot_nlp.git" class="block-20 zoom-effect" style="background-image: url('images/projects/chatbots.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/chatbot_nlp.git">ChatBot</a></h3>
+				  <p>NLP concepts (Stemming, Tokenization, bag of words), Creating training data, PyTorch model and training, Save/load model and implement the chat.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Girishiam/Handwritten-Digit-Recognition.git" class="block-20 zoom-effect" style="background-image: url('images/projects/hanwritten.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/Handwritten-Digit-Recognition.git">Handwritten Digit Recognition</a></h3>
+				  <p>In this project MNSIT dataset is used. Interface is developed using pygame. Model accuracy is 99%.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Girishiam/Content-Based-Movie-Recommendation.git" class="block-20 zoom-effect" style="background-image: url('images/projects/movieRecommendation.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/Content-Based-Movie-Recommendation.git">Content based Movie Recommendation</a></h3>
+				  <p>It's a content based movie recommendation system. The project is developed using TMDB 5000 movie dataset and TMDB API.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Girishiam/Image-Steganography.git" class="block-20 zoom-effect" style="background-image: url('images/projects/imageSte.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/Image-Steganography.git">Image Steganography</a></h3>
+				  <p>This project leverages Java's robust libraries, including Abstract Window Toolkit (AWT) and Swing, to provide an interactive and user-friendly interface for both embedding and extracting hidden information within images.
+				</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://www.kaggle.com/code/girishmondal/superheronamegenerator-using-tensorflow" class="block-20 zoom-effect" style="background-image: url('images/projects/superhero.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.kaggle.com/code/girishmondal/superheronamegenerator-using-tensorflow">SuperHero Name Generator</a></h3>
+				  <p>I made a project in which a superhero name could be generated using tensorflow and the dataset was collected from Kaggle.
+				</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Girishiam/GreatKart.git" class="block-20 zoom-effect" style="background-image: url('images/projects/greekmart.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/GreatKart.git">GreatMart: An eCommerce Website</a></h3>
+				  <p>I developed an e-commerce website using django, python, html, css, rest-api, postgresql, javascript. The website has all the features like payment gateway(paypal), adding to cart, customer management, admin management, secure login, login with social media, Category sorting, product searching etc.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.kaggle.com/code/girishmondal/brain-tumor-classification" class="block-20 zoom-effect" style="background-image: url('images/projects/brain_tumor.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.kaggle.com/code/girishmondal/brain-tumor-classification">Brain Tumor Classification using CNN</a></h3>
+				  <p>I used a pretrain dataset and fed it into my own CNN model and got an accuracy of 95.90%.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/Girishiam/Blog_Website.git" class="block-20 zoom-effect" style="background-image: url('images/projects/blog.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Girishiam/Blog_Website.git">Blog Website</a></h3>
+				  <p>This blog website was developed without frontend technology where users can create profiles and share their blogs with images. They can comment on it as well as perform crud operations on the blog. Technology used: python, django, django built in forms and bootstraps.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex justify-content-center">  
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/Girishiam/Student-Management-System.git" class="block-20 zoom-effect" style="background-image: url('images/projects/stuMan.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/Girishiam/Student-Management-System.git">Student Management System</a></h3>
+					<p>I completed this project in 2018. This is a student management project completed by C++ and file systems where CRUD operation can be done. Students' information was saved in files.</p>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-md-4 d-flex ftco-animate">
+				  <div class="blog-entry justify-content-end">
+				  <a href="https://github.com/Girishiam/Bluetooth-Chatting.git" class="block-20 zoom-effect" style="background-image: url('images/projects/bluetooth.png');">
+				  </a>
+				  <div class="text mt-3 float-right d-block">
+	
+					<h3 class="heading"><a href="https://github.com/Girishiam/Bluetooth-Chatting.git">Bluetooth Chatting</a></h3>
+					<p>Simple python project developed using socket library.</p>
+				  </div>
+				</div>
+			  </div>
+		   </div>
+		</div>
+		<div class="row justify-content-center mt-5">
+			<div class="col-md-6 text-center ftco-animate">
+				<p><a href="https://github.com/Girishiam" class="btn btn-primary py-4 px-5">More on Github</a></p>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="photography-section">
+		<div class="container">
+		  <div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Photography</h1>
+			  <h2 class="mb-4">Photography</h2>
+			  <p>I have a passion for capturing beautiful moments through photography using my smartphone, turning everyday scenes into artistic expressions.</p>
+			</div>
+		  </div>
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/1.jpg');" onclick="openImage('images/Photographs/1.jpg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">A Moment of Serenity</h3>
+				  <p>The rain-kissed leaf, a vibrant green against the monochrome world, held a single teardrop, reflecting the nature's fleeting beauty.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/2.jpg');" onclick="openImage('images/Photographs/2.jpg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">A Spark of Hope</h3>
+				  <p>A flicker of green amidst a world of gray, a tiny bulb held the promise of a brighter tomorrow.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/3.jpeg');"  onclick="openImage('images/Photographs/3.jpeg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading">Twilight Tea</h3>
+				  <p>A warm cup of tea, reflecting the fiery sunset, offered a moment of solace amidst the day's fading light.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+	  <br>
+		  <!-- added justify-content-center to center align the last two projects -->
+		  <div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/6.jpeg');" onclick="openImage('images/Photographs/6.jpeg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Golden Hour Grace</h3>
+				  <p>A dragonfly, silhouetted against the setting sun, held a moment of ethereal beauty, its wings shimmering with the last rays of daylight.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/5.jpeg');" onclick="openImage('images/Photographs/5.jpeg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Childhood's Treasure</h3>
+				  <p>A young boy, lost in a world of imagination, plays with his beloved, worn-out toys, surrounded by the simplicity of village life.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/4.jpeg');"  onclick="openImage('images/Photographs/4.jpeg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading">Sun Kissed Bloom</h3>
+				  <p>A delicate white flower, bathed in the warm glow of the morning sun, reaches for the sky, its petals shimmering like stardust.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/14.jpg');" onclick="openImage('images/Photographs/14.jpg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Sunny Snooze</h3>
+				  <p>A golden puppy, basking in the warm sunlight, curls up for a peaceful nap, paws tucked beneath its chin.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="javascript:void(0)" class="block-20 zoom-effect" style="background-image: url('images/Photographs/7.jpeg');" onclick="openImage('images/Photographs/7.jpeg')">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading">Bread Winner</h3>
+				  <p>A mischievous monkey, with a mischievous grin, enjoys a stolen piece of bread, perched high in a tree.</p>
+				</div>
+			  </div>
+		 </div>
+		</div>
+		<div id="imageOverlay" class="image-overlay" onclick="closeImage()">
+			<span class="close">&times;</span>
+			<img id="fullImage" class="full-image" src="" alt="">
+		</div>
+	  </section>
+
+
+
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="40">0</strong>
+                <span>Mentored Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="500">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to develop new applications &amp; learn about new technology. </h4>
+						<br>
+						<p><a href="https://github.com/Girishiam" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Khulna, Dhaka, Bangladesh</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://01957574565">+8801957574565</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:girishmondal.28@gmail.com">girishmondal.28@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-file"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">Download</a></p>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/Q1HBhuAAUUbEwfD48" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/girishhmo//"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://x.com/girishh_mondal"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/girishhmo/"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/girisshmo/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/ew.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
